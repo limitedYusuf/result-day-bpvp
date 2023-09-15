@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #131312;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light-mode {
+  background-color: #fff !important;
+  color: black !important;
+}
+
+button#toggle {
+  width: 100%;
+  background-color: #61228b;
+  border: none;
+  color: white;
+  padding: 16px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  flex: 1;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-0 {
+  flex: 12;
+}
+
+.item-1 {
+  flex: 8;
+}
+
+.item-2 {
+  flex: 4;
+  padding-left: 20px;
+}
+
+.item-5 {
+  flex: 6;
+  margin-right: 10px;
+}
+
+.breadcumb {
+  color: #A2B729 !important;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  font-size: 16px !important;
+}
+
+.title {
+  font-size: 34px !important;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.date {
+  font-size: 14px !important;
+}
+
+.content, .content2 {
+  margin-top: 30px;
+}
+
+.titlefoto {
+  font-size: 13px !important;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.desc {
+  margin-top: 30px;
+}
+
+.desc .writer {
+  font-size: 14px !important;
+}
+
+.desc p {
+  text-align: justify;
+  margin-bottom: 1rem !important;
+}
+
+.desc a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: blueviolet;
+  cursor: pointer;
+}
+
+nav {
+  color: white !important;
+  background-color: black !important;
+}
+
+nav.head {
+  color: white !important;
+  background-color: #131312 !important;
+}
+
+.head1 {
+  color: white !important;
+  font-size: 13px;
+  font-weight: 300;
+  display: inline-block;
+}
+
+.head1 a {
+  color: white !important;
+  margin-left: 10px;
+}
+
+.head1 a:hover {
+  font-weight: 300;
+  color: red !important;
+}
+
+.head2 {
+  color: white !important;
+  font-size: 13px;
+  font-weight: 300;
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.head2 a {
+  color: white !important;
+  margin-left: 10px;
+}
+
+.head2 a:hover {
+  font-weight: 300;
+  color: red !important;
+}
+
+.containerx {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.containerx .category {
+  display: inline-block;
+}
+
+.containerx .category a {
+  color: white !important;
+  font-weight: bold;
+  margin-right: 10px;
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+.containerx .category a:hover {
+  color: rgb(237, 173, 114) !important;
+  /* font-size: 18px !important; */
+  font-weight: bold;
+}
+
+.containerx .category a.yellow {
+  color: #A2B729 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(237, 173, 114) !important;
+  /* font-size: 18px !important; */
+  font-weight: bold;
+}
+
+a:active {
+  color: chartreuse !important;
+}
+
+.searchbox {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  background-color: #434343;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.searchbox input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  background-color: #434343;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.searchbox .serx {
+  padding: 12px;
+  background-color: #333;
+  border: none;
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+.navclass {
+  display: flex;
+  justify-content: space-between;
+}
+
+.com {
+  display: flex;
+}
+
+.com button {
+  margin-left: 10px;
+}
+
+.slot img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.popular span {
+  font-family: 'Roboto Condensed', sans-serif !important;
+  font-size: 20px;
+}
+
+.popular hr {
+  border: 3px solid #3CA5DC !important;
+  width: 26%;
+  margin-top: 8px;
+}
+
+footer {
+  color: white !important;
+  background-color: black !important;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 5px solid #3CA5DC !important;
+}

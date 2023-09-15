@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+.morphing {
+  position: relative;
+  font-size: 120px;
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  filter: contrast(25) blur(1px);
+}
+
+.word {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation: word 16s infinite ease-in-out;
+  animation: word 16s infinite ease-in-out;
+}
+
+.word:nth-child(1) {
+  -webkit-animation-delay: -16s;
+  animation-delay: -16s;
+}
+
+.word:nth-child(2) {
+  -webkit-animation-delay: -14s;
+  animation-delay: -14s;
+}
+
+.word:nth-child(3) {
+  -webkit-animation-delay: -12s;
+  animation-delay: -12s;
+}
+
+.word:nth-child(4) {
+  -webkit-animation-delay: -10s;
+  animation-delay: -10s;
+}
+
+.word:nth-child(5) {
+  -webkit-animation-delay: -8s;
+  animation-delay: -8s;
+}
+
+.word:nth-child(6) {
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+.word:nth-child(7) {
+  -webkit-animation-delay: -4s;
+  animation-delay: -4s;
+}
+
+@-webkit-keyframes word {
+  0%, 5%, 100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+
+  20%, 80% {
+    filter: blur(1em);
+    opacity: 0;
+  }
+}
+
+@keyframes word {
+  0%, 5%, 100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+
+  20%, 80% {
+    filter: blur(1em);
+    opacity: 0;
+  }
+}
+
+a {
+  position: absolute;
+  top: 70%;
+  left: 52%;
+  transform: translate(-70%, -52%);
+  text-decoration: none;
+}
+
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 2px solid white;
+  color: black;
+  cursor: pointer;
+  background-color: rgba(246, 243, 243, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: white;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}

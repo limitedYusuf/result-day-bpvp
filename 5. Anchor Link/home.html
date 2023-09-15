@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Saya</title>
+  <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <ul id="logo-items">
+      <li><img id="avatar" src="img/logo.png"></li>
+    </ul>
+
+    <ul id="menu-items">
+      <li><a class="push nav-link" href="home.html">Beranda</a></li>
+      <li><a class="nav-link" href="#artikel">Blog</a></li>
+      <li><a class="nav-link" href="#">Kontak</a></li>
+      <li><a class="nav-link" onClick="changeTheme()" href="javascript:void(0)">{ Change Theme }</a></li>
+    </ul>
+  </nav>
+
+  <!-- hero -->
+  <div class="hero" id="hero">
+    <div class="flex-container">
+      <div class="flex-item item1">
+        <h1 class="hometit">Yusuf spesialis dalam bidang <span id="keyData"></span></h1>
+      </div>
+      <div class="flex-item item2">
+        <div class="water-effect">
+          <div class="water"></div>
+          <img src="img/yusuf.png" alt="Gambar Anda">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- article -->
+  <div class="container">
+    <div class="article">
+      <h1 id="artikel">ARTIKEL SAYA</h1>
+      <div class="card-container">
+        <a href="post/post1.html" class="card">
+          <img src="img/post1.jpg" alt="Article 1">
+          <h2>Kerusuhan di Dago Bandung Dipicu Laporan yang Ditolak Bikin Warga Marah</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo necessitatibus ea totam reprehenderit
+            accusamus optio exercitationem molestias est numquam!...</p>
+        </a>
+        <a href="post/post2.html" class="card">
+          <img src="img/post2.jpg" alt="Article 2">
+          <h2>Dari Pengemudi Ojol hingga Presiden Jadi Korban Buruknya Udara Jakarta</h2>
+          <p>不再證明軍隊也在大多數申請內地，加上一口死亡漢化這裡另外戀愛新竹好評界面組織，隨着法人缺乏運用營養運作這場</p>
+        </a>
+        <a href="post/post3.html" class="card">
+          <img src="img/post3.jpeg" alt="Article 3">
+          <h2>Mangrove Wonorejo Surabaya: Harga Tiket, Jam Buka, dan Aktivitas</h2>
+          <p>Mangrove Wonorejo bisa menjadi pilihan destinasi wisata alam bernuansa teduh di tengah panasnya Kota
+            Surabaya...</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Copyright &copy; 2023 - Made by Yusuf Chan
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"
+    integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    function changeTheme() {
+      const body = document.body;
+      body.classList.toggle("light-mode");
+
+      if (body.classList.contains("light-mode")) {
+        localStorage.setItem("theme", "light");
+      } else {
+        localStorage.setItem("theme", "dark");
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "light") {
+        document.body.classList.add("light-mode");
+      }
+    });
+
+    var typed = new Typed('#keyData', {
+      strings: ['Dongeng', 'Mencari anak SD', 'Menakuti anak SD', 'Membeli anak SD', 'Tukang Kritik', 'Nolife', 'Pemula Web'],
+      typeSpeed: 90,
+      smartBackspace: true,
+      loop: true,
+    });
+  </script>
+</body>
+
+</html>
